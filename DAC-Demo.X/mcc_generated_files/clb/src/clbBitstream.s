@@ -1,0 +1,120 @@
+#if !(defined(_16F13113) || defined(_16F13114) || defined(_16F13115) || defined(_16F13123) || defined(_16F13124) || defined(_16F13125) || defined(_16F13143) || defined(_16F13144) || defined(_16F13145))
+    #error This module is only suitable for PIC16F13145 family devices
+#endif
+
+#ifdef CLB_CONFIG_ADDR
+    psect clb_config,global,class=STRCODE,abs,ovrld,delta=2,noexec,split=0,merge=0,keep
+#else
+    psect clb_config,global,class=STRCODE,delta=2,noexec,split=0,merge=0,keep
+#endif
+
+global _start_clb_config
+
+psect   clb_config
+#ifdef CLB_CONFIG_ADDR
+    ORG CLB_CONFIG_ADDR
+#endif
+
+_start_clb_config:
+    dw  0x180C;
+    dw  0x3120;
+    dw  0x3236;
+    dw  0x032D;
+    dw  0x1899;
+    dw  0x00C2;
+    dw  0x19D2;
+    dw  0x0324;
+    dw  0x1872;
+    dw  0x3CC5;
+    dw  0x3206;
+    dw  0x08D0;
+    dw  0x2419;
+    dw  0x0AC5;
+    dw  0x262C;
+    dw  0x1B20;
+    dw  0x18CD;
+    dw  0x0920;
+    dw  0x3266;
+    dw  0x0F33;
+    dw  0x18F9;
+    dw  0x00CC;
+    dw  0x180C;
+    dw  0x02C0;
+    dw  0x19B2;
+    dw  0x04C0;
+    dw  0x3206;
+    dw  0x1CC2;
+    dw  0x2419;
+    dw  0x00CF;
+    dw  0x246C;
+    dw  0x0720;
+    dw  0x1A0C;
+    dw  0x1120;
+    dw  0x3216;
+    dw  0x2325;
+    dw  0x1859;
+    dw  0x00D2;
+    dw  0x18D2;
+    dw  0x0322;
+    dw  0x1A72;
+    dw  0x1CC3;
+    dw  0x3208;
+    dw  0x1900;
+    dw  0x2008;
+    dw  0x010E;
+    dw  0x205C;
+    dw  0x01C0;
+    dw  0x2210;
+    dw  0x11C0;
+    dw  0x1C18;
+    dw  0x2506;
+    dw  0x380E;
+    dw  0x0500;
+    dw  0x219C;
+    dw  0x01C3;
+    dw  0x2050;
+    dw  0x39C0;
+    dw  0x1C48;
+    dw  0x0910;
+    dw  0x380E;
+    dw  0x0B06;
+    dw  0x225C;
+    dw  0x01C6;
+    dw  0x21BC;
+    dw  0x0500;
+    dw  0x1C08;
+    dw  0x1FC3;
+    dw  0x202E;
+    dw  0x0111;
+    dw  0x38B0;
+    dw  0x09C0;
+    dw  0x227C;
+    dw  0x1D03;
+    dw  0x1C08;
+    dw  0x03CD;
+    dw  0x208E;
+    dw  0x0103;
+    dw  0x39F0;
+    dw  0x15C0;
+    dw  0x20BD;
+    dw  0x0506;
+    dw  0x1C08;
+    dw  0x0FD3;
+    dw  0x20FE;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x00C0;
+    dw  0x0000;
+    dw  0x0000;
+    dw  0x0000;
